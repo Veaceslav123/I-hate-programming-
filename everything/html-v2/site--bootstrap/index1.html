@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Basic HTML File</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body onload="drawTable();">
+    <div class="container">
+
+        <div class="row">
+            <div class="col-lg-5 g-3">
+
+                <div class="container bg-dark text-white border py-3 my-3 ">
+                    <div class="col-lg-6 g-3 "><h1>Register</h1> </div>
+                </div>
+
+                <form class="needs-validation" action="/examples/actions/confirmation.php" method="post" novalidate>
+                    <div class="row align-items-center g-3">
+
+                        <div class="input-group">
+                            <label class="visually-hidden" for="inputUsername">Username</label>
+                            <input type="text" class="form-control" placeholder="Username" id="inputUsername" required>
+                            <span class="input-group-text">
+                                <i class="fa fa-user icon"></i>
+                            </span>                           
+                        </div>
+
+                        <div class="input-group">
+                            <label class="visually-hidden" for="inputEmail">Email</label>
+                            <input type="email" class="form-control" placeholder="Email" id="inputEmail" required>
+                            <span class="input-group-text">
+                                <i class="fa fa-envelope icon"></i>
+                            </span>                           
+                        </div>
+
+                        <div class="input-group">
+                            <label class="visually-hidden" for="inputdate">Date of birth</label>
+                            <input type="date" class="form-control" id="inputDate" required>
+                    
+                        </div>
+
+                        <div class="input-group">
+                            <label class="visually-hidden" for="inputPassword">Password</label>
+                            <input type="text" class="form-control" placeholder="Password" id="inputPassword" required>
+                            <span class="input-group-text">
+                                <i class="fa fa-lock icon"></i>
+                            </span>                           
+                        </div>
+
+                        <div class="input-group">
+                            <label class="visually-hidden" for="inputConfirmPass">Confirm Password</label>
+                            <input type="text" class="form-control" placeholder="Confirm Password" id="inputConfirmPass" required>
+                            <span class="input-group-text">
+                                <i class="fa fa-lock icon"></i>
+                            </span>                           
+                        </div>
+
+                        
+                        <div class="col-auto">
+                            <button type="button" class="btn btn-outline-primary" id="submit" onclick="functionValidation();">Sign in</button>
+                        </div>
+                        <div class="col-auto">
+                            <button type="reset" class="btn btn-outline-danger">Reset</button>
+                        </div>
+
+                    </div>
+                </form>
+                
+
+            </div>
+
+            <div class="col-lg-7 g-3">
+                <div class="row my-3 ">      
+                    <div class="container bg-dark text-white border py-3  ">
+                        <div class="col-lg-12"><h1>Saved Users</h1> </div>
+                    </div>
+                    <form>
+                        <div class="row align-items-center g-3">
+                            <div class="row g-3 my-3">
+                                <div class="col-lg-3">
+                                    <div class="input-group">
+                                        <input type="number" class="form-control" placeholder="ID" id="searchId">
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-3">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" placeholder="Email" id="searchEmail">
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">    
+                                        <button type="button" class="btn btn-outline-primary" onclick="search();">Search</button>
+                                </div>
+                                <div class="col-lg-3">
+                                    <button type="reset" class="btn btn-outline-danger" onclick="drawTable()">Reset</button>
+                                </div>
+                            </div>
+                        </div>  
+                    </form>
+                    
+                    <table class="table" id="dataStorage">
+                        <thead class="table-light">
+                            <tr class="table-dark">
+                                <th>#</th>
+                                <th>Username</th>
+                                <th>Email</th>
+                                <th>Date of birth</th>
+                                <th>Password</th>
+                                <th>About</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

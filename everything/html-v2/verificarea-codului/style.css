@@ -1,0 +1,93 @@
+input{
+    width: 360px;
+    height: 40px;
+}  
+.button{
+    width: 200px;
+    height: 40px;
+    background-color: black; 
+    color:white;
+    border:1px white solid;
+    border-radius: 5px;
+}   
+
+#buttonDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon {
+    padding-top:10px;
+    padding-bottom:12px;
+    background: white;
+    color: black;
+    min-width: 50px;
+    text-align: center;
+    border: 2px solid ;
+}
+
+#registerDiv{
+    border-radius:10px; 
+    width: 500px; 
+    height: 500px;
+    border: 20px solid ; 
+    border-color: lightgray; 
+    text-align: center;
+}
+
+
+.col {
+    float: left;
+    width: 50%;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+#dataBase{
+    border-radius:10px; 
+    width: 500px; 
+    height: 500px;
+    border: 20px    solid ; 
+    border-color: gray; 
+    text-align: center;
+    overflow-y:auto;
+}
+table{
+    width: 500px;
+    height: 40px;
+    border-collapse: collapse;
+    
+}
+
+tr{
+    width:150px;
+    height:35px;
+    
+}   
+
+.search{
+    float:left; 
+    position: relative;
+    top: 3px;
+    width:120px;
+    height:40px;
+    left : 4px;
+    border-radius: 5px ;
+
+}
+
+
+#rightDiv{
+    float:right;
+    position: relative;
+    top: 6px;
+    width:200px;
+    height:40px;
+    padding-right: 10px;
+}

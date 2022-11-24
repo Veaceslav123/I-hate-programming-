@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>CV</title>
+    </head>
+    <body>
+        <table>
+            <tr>
+                <td><h3>Informatii personale</h3> <img src="alt.cv"></td>
+            </tr>
+            <tr>
+                <td>Data , luna , anul nasterii <br>Domiciliu<br>Contacte</td>
+            </tr>
+            <tr>
+                <td>Experienta personala</td>
+                <td>Experienta mea</td>
+            </tr>
+            <tr>
+                <td>Educatie si formare</td>
+                <td>Informatii despre studii</td>
+            </tr>
+            <tr>
+                <td>Competitii lingvistice</td>
+                <td>Cunostintele mele in limbi straini</td>
+            </tr>
+            <tr>
+                <td>Competente de comunicare</td>
+                <td>Competentele mele de comunicare</td>
+            </tr>
+        </table>
+    </body>
+</html>

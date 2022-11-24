@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" >
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="script.js"></script>
+        
+        
+
+        
+    </head>
+    <body onload="drawTable();">
+
+        <div class="row">
+            <div id="registerDiv" class="col">
+                <h2>Inregistrare</h2>
+                <p id="demo"></p>
+                <form > 
+                        <div><label></label> <input type="text"  placeholder="Nume utilizator" required id="user" >            <i class="fa fa-user icon"></i></div><br>
+                        <div><label></label> <input type="email"  placeholder="Email" required id="email"  oninvalid="displayErrorMessage();">                   <i class="fa fa-envelope icon"></i></div><br> 
+                            <p id="demo1"></p>
+                        <div><label></label> <input type="text"  placeholder="Parola" required id="pass" >                 <i class="fa fa-lock icon"></i></div><br>
+                            <p id="demo3"></p>
+                        <div><label></label> <input type="text"  placeholder="Confirma parola" required id="passcheck">    <i class="fa fa-lock icon"></i></i></div><br>
+                        <div class="row " id="buttonDiv">
+                            <div class="col" ><input type="button"  value="Intra in cont" class="button" onclick="functionValidation();"></div>
+                            <div class="col"><input  type="reset"   value="reset" class="button"></div>
+                        </div>
+                    
+                    </form> 
+            </div>
+
+            <div  id="dataBase">
+                <div class="row" id="search">
+                    <div ><label></label> <input type="number"  placeholder="Sort by id" class="search" id="leftDiv">
+                    <div ><label></label> <input type="text"  placeholder="Sort by email "  class="search" id="centerDiv">                     
+                    <div><input type="button"  value="Search" id="rightDiv" class="button" onclick="search();">
+                    
+                    </div><br><br><br>
+                </div>
+                <table id="dataStorage" border=1>
+                    <tr>
+                        <th>ID</th>
+                        <th>User</th>
+                        <th>Email</th>
+                        <th>Pass</th>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+
+    </body>
+</html>
